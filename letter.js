@@ -4,7 +4,7 @@ function Letter (letter){
    this.Letter = letter;
    this.takeAGuess = false;
 
-   this.guessedletter = function(){
+   this.getCharacter = function(){
        if(this.Letter === " "){
            this.takeAGuess = true;
            return " ";
@@ -15,7 +15,7 @@ function Letter (letter){
        }
    }
 
-   this.guess = function (character) {
+   this.checkLetter = function (character) {
        if(character === this.letter){
            takeAGuess = true;
        }
