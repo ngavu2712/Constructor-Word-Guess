@@ -1,17 +1,18 @@
 
 
 function Letter (letter){
-   this.Letter = letter;
+   this.letter = letter;
    this.takeAGuess = false;
 
+
    this.getCharacter = function(){
-       if(this.Letter === " "){
+       if(this.letter === " "){
            this.takeAGuess = true;
            return " ";
        } else if (this.takeAGuess === false) {
            return "_";
        } else {
-           return this.Letter;
+           return this.letter;
        }
    }
 

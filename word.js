@@ -3,13 +3,18 @@ var Letter = require('./letter.js');
 function Word (word) {
 
     this.word = word;
-    this.letters = [];
+    this.letters = word.split("").map(character => new Letter(character)) //word.split return
+// var sentence = "The Quick Brown Fox"
+// var words = sentence.split(" ") // ["the","quick","brown","fox"]
+// var words = sentence.split("") //["t","h","e"," ","q","u","i","c","k"," ","b","r","o","w","n"," ","f","o","x"]
+    
 
     /*this.letter = word.split("").map(function(letter){
         return new Letter (letter)
     })*/
 
-    this.makeLetter = function(){
+
+ /*   this.makeLetter = function(){
         const wordArray = this.word.split("");
         for(var i = 0; i< wordArray.length; i++){
             const newCharacter = new Letter (wordArray[i]);
@@ -30,8 +35,8 @@ function Word (word) {
             printedWord += letter.getCharacter() + " ";
         })
         return printedWord;
-    }
+    }*/
 
 }
 
-module.exports = Word
+module.exports = Word;
