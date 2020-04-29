@@ -14,7 +14,7 @@ Contructor word guess is a Node.js based application with interactive prompts on
 # Components
 
 1. **Letter.js:** Contains a constructor, Letter. This constructor displays a blank placeholder depending on whether or not the user has guessed the letter.
-  * Should not *require* any other file
+    * Should not *require* any other file
 
 1. **Word.js:** Contains a constructor, Word that depends on the Letter constructor. This is used to create an object representing the current word the user is attempting to guess.
     * Should *require* Letter.js
