@@ -37,7 +37,7 @@ function playGame () {
     }
     if(pickedWord) {
         word = new Word(pickedWord);
-        word.makeLetters();
+        //word.makeLetters();
         makeGuess();
     }
 

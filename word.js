@@ -3,7 +3,8 @@ var Letter = require('./letter.js');
 function Word (word) {
 
     this.word = word;
-    this.letters = word.split("").map(character => new Letter(character)) //word.split return
+    this.letters = word.split("").map(character => new Letter(character)) //word.split return raw array of letter splitted from the word. 
+    //Map() is used to loop through the array and return a new array of letter objects that are drawn from Letter constructor
 // var sentence = "The Quick Brown Fox"
 // var words = sentence.split(" ") // ["the","quick","brown","fox"]
 // var words = sentence.split("") //["t","h","e"," ","q","u","i","c","k"," ","b","r","o","w","n"," ","f","o","x"]
